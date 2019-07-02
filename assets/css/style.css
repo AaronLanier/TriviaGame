@@ -1,0 +1,16 @@
+body{
+    
+    background-image: url("http://i.imgur.com/ZzEFwhn.jpg");
+    background-size: auto;
+	text-align: center;
+}
+
+.text-muted{
+	color: blue;
+}
+.last-seconds{
+  color: red;
+}
+.option{
+  margin: 15px;
+}

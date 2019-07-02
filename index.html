@@ -2,30 +2,62 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Trivia Game</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="assets\css\reset.css">
-        <link rel="stylesheet" href="assets\css\style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <script src="https://code.jquery.com/jquery.js"></script>
-    </head>
-    <body>
-      
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h1>hello</h1>
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia Game</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets\css\reset.css">
+    <link rel="stylesheet" href="assets\css\style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery.js"></script>
+</head>
+
+<body background="assets\images\FellowshipBackground.jpg">
+
+
+    <div class="container">
+        <div class="header text-center clearfix">
+            <h1 class="text-muted">Lord of the Rings trivia game</h1>
+        </div>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <div id="game">
+                    <h2>Lord of the Rings trivia game</h2>
+                    <p id="remaining-time" class="lead">Remaining Time: <span id="timer"></span></p>
+                    <p id="question" class="lead"></p>
+                </div>
+                <div id="results">
                 </div>
             </div>
 
+            <div class="row">
+                <div id="choices" class="text-center">
+                    <button id="start" class="btn btn-info btn-lg">Replay!</button>
+                    <div id="options">
 
-        </div>
-        
+                    </div>
+
+                </div>
+            </div>
+
+        </div> <!-- /container -->
+
+        <!-- jQuery CDN-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Bootstrap CDN -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+        <!-- TRIVIA APP JS -->
         <script src="assets\javascript\app.js" async defer></script>
-    </body>
+
+
+</body>
+
 </html>
